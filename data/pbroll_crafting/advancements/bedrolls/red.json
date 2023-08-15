@@ -1,0 +1,13 @@
+{
+    "criteria": {
+        "Unlocked": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+                "recipe": "pbroll_crafting:bedrolls/red"
+            }
+        }
+    },
+    "rewards": {
+        "function": "pbroll_crafting:crafted/bedrolls/red"
+    }
+}

@@ -1,0 +1,24 @@
+{
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:placed_block",
+        "conditions": {
+          "location": [
+            {
+              "condition": "minecraft:location_check",
+              "predicate": {
+                "block": {
+                    "tag": "pbroll:heads",
+                  "nbt": "{SkullOwner:{Name:\"$pbroll.block.bedroll\"}}"
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    "rewards": {
+      "function": "pbroll:place/raycast/init"
+    }
+  }
+  
