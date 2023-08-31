@@ -16,6 +16,6 @@ execute if score $pbroll.sleeppercentage pbroll.dummy matches 0.. run scoreboard
 execute if score $pbroll.sleeppercentage pbroll.dummy matches 0.. run scoreboard players operation $pbroll.playercount.asleep pbroll.dummy /= $pbroll.sleeppercentage pbroll.dummy
 
 
-execute if predicate pbroll:sleepy_time if score $pbroll.playercount.asleep pbroll.dummy >= $pbroll.playercount pbroll.dummy run function pbroll:interacted/skip_night
+execute as @r[predicate=pbroll:is_in_overworld] if predicate pbroll:sleepy_time if score $pbroll.playercount.asleep pbroll.dummy >= $pbroll.playercount pbroll.dummy run function pbroll:interacted/skip_night
 
-execute if predicate pbroll:sleepy_time if score $pbroll.playercount.asleep pbroll.dummy <= $pbroll.playercount pbroll.dummy run schedule function pbroll:interacted/skip_test 1s replace
+execute as @r[predicate=pbroll:is_in_overworld] if predicate pbroll:sleepy_time if score $pbroll.playercount.asleep pbroll.dummy <= $pbroll.playercount pbroll.dummy run schedule function pbroll:interacted/skip_test 1s replace
