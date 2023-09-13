@@ -1,0 +1,13 @@
+{
+    "criteria": {
+        "Unlocked": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+                "recipe": "sbags2_crafting:light_blue"
+            }
+        }
+    },
+    "rewards": {
+        "function": "sbags2_crafting:crafted/light_blue"
+    }
+}

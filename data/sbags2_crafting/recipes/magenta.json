@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "NS",
+        "WW",
+        "NS"
+    ],
+    "key": {
+        "N": {
+            "item": "minecraft:iron_nugget"
+        },
+        "W": {
+            "item": "minecraft:magenta_wool"
+        },
+        "S": {
+            "item": "minecraft:string"
+        }
+    },
+  "result": {
+    "item": "minecraft:knowledge_book",
+    "count": 1
+  }
+}

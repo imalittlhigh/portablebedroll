@@ -1,0 +1,13 @@
+{
+    "criteria": {
+        "Unlocked": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+                "recipe": "sbags2_crafting:red"
+            }
+        }
+    },
+    "rewards": {
+        "function": "sbags2_crafting:crafted/red"
+    }
+}
