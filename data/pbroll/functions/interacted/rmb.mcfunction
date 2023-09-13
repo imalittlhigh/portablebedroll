@@ -8,6 +8,9 @@ advancement revoke @s only pbroll:rmb_interaction
 
 tag @s add pbroll.player.interacted
 
+scoreboard players reset $pbroll.time
+execute store result score $pbroll.time pbroll.dummy run time query daytime
+
 execute unless predicate pbroll:is_in_overworld as @e[tag=pbroll.interaction.bedroll,nbt={interaction:{}},predicate=!pbroll:is_in_overworld] at @s run summon marker ~ ~ ~ {NoGravity:1b,Tags:["pbroll.marker","pbroll.marker.explode"]}
 execute unless predicate pbroll:is_in_overworld as @e[tag=pbroll.interaction.bedroll,nbt={interaction:{}},predicate=!pbroll:is_in_overworld] at @s run function pbroll:remove/main
 

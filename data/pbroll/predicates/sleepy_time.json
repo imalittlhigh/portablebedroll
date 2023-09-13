@@ -1,14 +1,24 @@
 {
-    "condition": "minecraft:any_of",
-    "terms": [
-      {
-        "condition": "minecraft:reference",
-        "name": "pbroll:thundering"
+  "condition": "minecraft:any_of",
+  "terms": [
+    {
+      "condition": "minecraft:value_check",
+      "value": {
+        "type": "minecraft:score",
+        "target": {
+          "type": "minecraft:fixed",
+          "name": "$pbroll.time"
+        },
+        "score": "pbroll.dummy"
       },
-      {
-        "condition": "minecraft:reference",
-        "name": "pbroll:time_to_sleep"
+      "range": {
+        "min": 12542,
+        "max": 23000
       }
-    ]
-  }
-  
+    },
+    {
+      "condition": "minecraft:weather_check",
+      "thundering": true
+    }
+  ]
+}
