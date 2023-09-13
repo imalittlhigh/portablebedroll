@@ -1,6 +1,21 @@
 {
 	"pack": {
-		"pack_format": 15,
-		"description": "Portable Bedrolls by imalittlhigh"
+	  "pack_format": 15,
+	  "description": {
+		"text": "Portable Bedroll ",
+		"color": "gold",
+		"extra": [
+		  {
+			"text": " by ",
+			"color": "aqua"
+		  },
+		  {
+			"text": "imalittlhigh",
+			"color": "gold",
+			"italic": true
+		  }
+		]
+	  }
 	}
-}
+  }
+  
