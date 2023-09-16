@@ -16,4 +16,3 @@ execute if score $pbroll.resttime.calc pbroll.dummy matches 0 if predicate pbrol
 
 execute if score $pbroll.resttime.calc pbroll.dummy matches 0 as @a[tag=pbroll.player.sleeping] at @s run function pbroll:use/wake
 
-say loop
