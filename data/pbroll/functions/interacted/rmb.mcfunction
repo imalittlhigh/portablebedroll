@@ -14,7 +14,7 @@ execute store result score $pbroll.time pbroll.dummy run time query daytime
 execute unless predicate pbroll:is_in_overworld as @e[tag=pbroll.interaction.bedroll,nbt={interaction:{}},predicate=!pbroll:is_in_overworld] at @s run summon marker ~ ~ ~ {NoGravity:1b,Tags:["pbroll.marker","pbroll.marker.explode"]}
 execute unless predicate pbroll:is_in_overworld as @e[tag=pbroll.interaction.bedroll,nbt={interaction:{}},predicate=!pbroll:is_in_overworld] at @s run function pbroll:remove/main
 
-execute as @e[tag=pbroll.marker.explode] at @s run summon tnt ~ ~ ~ {NoGravity:1b,Fuse:0}
+execute as @e[tag=pbroll.marker.explode] at @s run summon tnt ~ ~ ~ {NoGravity:1b,fuse:0}
 execute as @e[tag=pbroll.marker.explode] run kill @s
 
 execute as @s[tag=pbroll.player.sleeping,tag=pbroll.player.interacted] at @s run function pbroll:use/wake
